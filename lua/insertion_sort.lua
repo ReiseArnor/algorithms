@@ -18,8 +18,9 @@ function ordenamiento(lista)
 end
 
 list_int = ranlist.ints(20)
-print("before:")
-for k, elemento in ipairs(list_int) do print(elemento) end
+io.write("before: ")
+for _, elemento in ipairs(list_int) do io.write(elemento, " ") end
 ordenamiento(list_int)
-print("after:")
-for k, elemento in ipairs(list_int) do print(elemento) end
+io.write("\nafter: ")
+for _, elemento in ipairs(list_int) do io.write(elemento, " ") end
+io.write("\n")
